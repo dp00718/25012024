@@ -1,0 +1,130 @@
+.main{
+      background-image: linear-gradient(to right, rgb(230, 98, 203), yellow
+       );
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      /* gap: 10px; */
+      justify-content: center;
+      /* height: 600px; */
+      margin: 100px;
+      width: 600px;
+      align-items: center;
+      
+
+}
+.main >.box{
+   
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+   align-items: center;
+    display: flex;
+    font: bold;
+    font-size: 10px;
+    text-shadow: 0 0 20px white;
+    font-size: 15px;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    text-align: center;
+    /* display: grid; */
+    /* margin-top: 100px;
+    margin-bottom: 100px; */
+    
+}
+*{
+    /* margin: 0; */
+}
+.box:nth-child(1){
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: rgb(118, 108, 108);
+    height: 200px;
+    &:hover{
+        background-color: orangered;
+        cursor: pointer;
+        color: aqua;
+    }
+
+}
+.box:nth-child(6){
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: rgb(40, 30, 30);
+    width: 200px;
+    &:hover{
+        background-color: black;
+        cursor: pointer;
+        color: aqua;
+    }
+}
+.box:nth-child(7){
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    background-color: rgb(118, 108, 108);
+    height: 200px;
+    &:hover{
+        background-color: red;
+        cursor: pointer;
+        color: aqua;
+    }
+    
+}
+.box:nth-child(2){
+    background-color: rgb(63, 44, 44);
+    &:hover{
+        background-color: black;
+        cursor: pointer;
+        color: aqua;
+    }
+}
+
+.box:nth-child(5){
+    background-color: rgb(63, 44, 44);
+    &:hover{
+        background-color: black;
+        cursor: pointer;
+        color: aqua;
+    }
+}
+
+.box:nth-child(3){
+    background-color: lightskyblue;
+    &:hover{
+        background-image: radial-gradient(green, white, orangered);
+        color: blue;
+    }
+}
+
+.box:nth-child(4){
+    background-color: lightgreen;
+    &:hover{
+        background-image: radial-gradient(green, white, orangered);
+        color: blue;
+    }
+}
+.box:nth-child(8){
+    background-color: lightskyblue;
+    &:hover{
+        background-image: radial-gradient(green, white, orangered);
+        color: blue;
+    }
+}
+
+.box:nth-child(9){
+    background-color: lightgreen;
+    &:hover{
+        background-image: radial-gradient(green, white, orangered);
+        color: blue;
+    }
+}
+/* .main:hover .box{
+    background-color: black;
+    cursor: pointer;
+    color: aqua;
+    border: 0.2px solid white;
+} */
